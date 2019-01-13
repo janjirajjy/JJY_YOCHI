@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>ประวัติการชำระเงิน</title>
+    <meta name="description" content="Elmer is a Dashboard & Admin Site Responsive Template by hencework." />
+    <meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Elmer Admin, Elmeradmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
+    <meta name="author" content="hencework" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Morris Charts CSS -->
+    <link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css" />
+
+    <!-- vector map CSS -->
+    <link href="vendors/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" type="text/css" />
+
+    <!-- Calendar CSS -->
+    <link href="vendors/bower_components/fullcalendar/dist/fullcalendar.css" rel="stylesheet" type="text/css" />
+
+    <!-- Data table CSS -->
+    <link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom CSS -->
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <!--Preloader-->
+    <div class="preloader-it">
+        <div class="la-anim-1"></div>
+    </div>
+    <!--/Preloader-->
+    <div class="wrapper  theme-1-active pimary-color-blue">
+        <!-- Top Menu Items -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="grad1">
+            <div class="mobile-only-brand pull-left">
+                <div class="nav-header pull-left">
+                    <div class="logo-wrap">
+                        <a href="index1.html">
+
+                            <span class="brand-text">E-AUCTION</span>
+                        </a>
+                    </div>
+                </div>
+                <a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i
+                        class="zmdi zmdi-menu"></i></a>
+                <a id="toggle_mobile_search" data-toggle="collapse" data-target="#search_form" class="mobile-only-view"
+                    href="javascript:void(0);"><i class="zmdi zmdi-search"></i></a>
+                <a id="toggle_mobile_nav" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-more"></i></a>
+                <form id="search_form" role="search" class="top-nav-search collapse pull-left">
+
+                </form>
+            </div>
+            <div id="mobile_only_nav" class="mobile-only-nav pull-right">
+                <ul class="nav navbar-right top-nav pull-right">
+                    <li>
+
+                    </li>
+
+
+
+                    <li class="dropdown auth-drp">
+                        <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="./dist/img/iconsuser.png" />
+                            <!-- <span class="user-online-status"></span> -->
+                        </a>
+                        <ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+                            <li>
+                                <a href="profile.html"><i class="zmdi zmdi-account"></i><span>Profile</span></a>
+                            </li>
+
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /Top Menu Items -->
+
+        <!-- Left Sidebar Menu -->
+        <div class="fixed-sidebar-left">
+            <ul class="nav navbar-nav side-nav nicescroll-bar" id="grad1">
+                <li class="navigation-header">
+                    <span>Main</span>
+                    <i class="zmdi zmdi-more"></i>
+                </li>
+                <li>
+                    <a href="index1.html" data-toggle="collapse" data-target="#app_dr">
+                        <div class="pull-left "><img src="./dist/img/icons8-home-50.png" width="20" class="mr-20">
+                            <span class="right-nav-text " style="font-size:18px"> หน้าแรก</span></div>
+                        <div class="clearfix"></div>
+                    </a>
+                    <ul id="app_dr" class="collapse collapse-level-1">
+                    </ul>
+                </li>
+                <li>
+                    <a href="profile.html" data-toggle="collapse" data-target="#app_dr">
+                        <div class="pull-left "><img src="./dist/img/iconsuser.png" width="20" class="mr-20">
+                            <span class="right-nav-text " style="font-size:18px"> ผู้ใช้งาน</span></div>
+                        <div class="clearfix"></div>
+                    </a>
+                    <ul id="app_dr" class="collapse collapse-level-1">
+                    </ul>
+                </li>
+                <li>
+                    <a href="market.html" data-toggle="collapse" data-target="#app_dr">
+                        <div class="pull-left "><img src="./dist/img/iconmaket.png" width="20" class="mr-20">
+                            <span class="right-nav-text " style="font-size:18px"> ลงขาย</span></div>
+                        <div class="clearfix"></div>
+                    </a>
+                    <ul id="app_dr" class="collapse collapse-level-1">
+                    </ul>
+                </li>
+                <li>
+                    <a href="basket.html" data-toggle="collapse" data-target="#app_dr">
+                        <div class="pull-left "><img src="./dist/img/iconssell.png" width="20" class="mr-20">
+                            <span class="right-nav-text " style="font-size:18px"> ตะกร้า</span></div>
+                        <div class="clearfix"></div>
+                    </a>
+                    <ul id="app_dr" class="collapse collapse-level-1">
+                    </ul>
+                </li>
+                <li>
+                    <a href="Paymenthistory.html" data-toggle="collapse" data-target="#app_dr">
+                        <div class="pull-left "><img src="./dist/img/iconsประวัติ-50.png" width="20" class="mr-20">
+                            <span class="right-nav-text " style="font-size:18px"> ประวัติการชำระเงิน</span></div>
+                        <div class="clearfix"></div>
+                    </a>
+                    <ul id="app_dr" class="collapse collapse-level-1">
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#manu">
+                        <div class="pull-left "><img src="./dist/img/iconslist.png" width="20" class="mr-20">
+                            <span class="right-nav-text " style="font-size:18px"> หมวดหมู่</span></div>
+                        <div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div>
+                        <div class="clearfix"></div>
+                    </a>
+
+                    <ul id="manu" class="collapse collapse-level-1">
+                        <li>
+                            <a href="electronic.html">อุปกรณ์ อิเล็กทรอนิก</a>
+                        </li>
+                        <li>
+                            <a href="cloth.html">เสื้อผ้า</a>
+                        </li>
+                        <li>
+                            <a href="sport.html">กีฬา</a>
+                        </li>
+                        <li>
+                            <a href="craftsmantool.html">เครื่องมือช่าง</a>
+                        </li>
+                    </ul>
+
+
+
+                </li>
+
+            </ul>
+        </div>
+        <!-- /Left Sidebar Menu -->
+
+        <!-- Right Sidebar Menu -->
+
+        <!-- /Right Sidebar Menu -->
+
+
+
+        <!-- Main Content -->
+        <div class="page-wrapper">
+            <div class="container-fluid">
+				<!-- Title -->
+				<div class="row heading-bg">
+					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+					  <h5 class="txt-dark">ประวัติการชำระเงิน</h5>
+					</div>
+					<!-- Breadcrumb -->
+					<!-- <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+					  <ol class="breadcrumb">
+						<li><a href="">Dashboard</a></li>
+						<li><a href="#"><span>UI element</span></a></li>
+						<li class="active"><span>tabs</span></li>
+					  </ol>
+					</div> -->
+					<!-- /Breadcrumb -->
+				</div>
+				<!-- /Title -->
+	<!-- Row -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-default card-view">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <h6 class="panel-title txt-dark">data Table</h6>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-wrapper collapse in">
+                    <div class="panel-body">
+                        <div class="table-wrap">
+                            <div class="table-responsive">
+                                <table id="datable_1" class="table table-bordered  pb-30" >
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <!-- <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr> -->
+                                    </tfoot>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </div>
+    <!-- /Row -->
+            </div>
+            <!-- Footer -->
+            <footer class="footer container-fluid pl-30 pr-30">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Jook_D_dook</p>
+                    </div>
+                </div>
+            </footer>
+            <!-- /Footer -->
+
+        </div>
+        <!-- /Main Content -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- JavaScript -->
+
+    <!-- jQuery -->
+    <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Vector Maps JavaScript -->
+    <script src="vendors/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="dist/js/vectormap-data.js"></script>
+
+    <!-- Calender JavaScripts -->
+    <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+    <script src="vendors/jquery-ui.min.js"></script>
+    <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="dist/js/fullcalendar-data.js"></script>
+
+    <!-- Counter Animation JavaScript -->
+    <script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
+
+    <!-- Data table JavaScript -->
+    <script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="dist/js/dataTables-data.js"></script>
+    <!-- Slimscroll JavaScript -->
+    <script src="dist/js/jquery.slimscroll.js"></script>
+
+    <!-- Fancy Dropdown JS -->
+    <script src="dist/js/dropdown-bootstrap-extended.js"></script>
+
+    <!-- Sparkline JavaScript -->
+    <script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+
+    <script src="vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="dist/js/skills-counter-data.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="vendors/bower_components/raphael/raphael.min.js"></script>
+    <script src="vendors/bower_components/morris.js/morris.min.js"></script>
+    <script src="dist/js/morris-data.js"></script>
+
+    <!-- Owl JavaScript -->
+    <script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <!-- Switchery JavaScript -->
+    <script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
+
+    <!-- Data table JavaScript -->
+    <script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+
+    <!-- Gallery JavaScript -->
+    <script src="dist/js/isotope.js"></script>
+    <script src="dist/js/lightgallery-all.js"></script>
+    <script src="dist/js/froogaloop2.min.js"></script>
+    <script src="dist/js/gallery-data.js"></script>
+
+    <!-- twitter JavaScript -->
+    <script src="dist/js/twitterFetcher.js"></script>
+
+    <!-- Spectragram JavaScript -->
+    <script src="dist/js/spectragram.min.js"></script>
+
+    <!-- Init JavaScript -->
+    <script src="dist/js/init.js"></script>
+    <script src="dist/js/widgets-data.js"></script>
+
+</body>
+
+</html>
