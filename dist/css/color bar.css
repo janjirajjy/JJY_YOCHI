@@ -1,0 +1,5 @@
+/* ไล่สีส้มไปขาว */
+#grad1 {
+    background: rgb(255, 72, 0); /* For browsers that do not support gradients */
+background: linear-gradient(rgb(255, 72, 0), rgb(250, 250, 249)); /* Standard syntax (must be last) */
+}
