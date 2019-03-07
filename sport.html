@@ -181,9 +181,15 @@
         <div class="page-wrapper">
             <div class="container-fluid pt-25">
 
-                <!-- Row -->
-
-                <!-- /Row -->
+               
+ <!-- Row -->
+<!-- Product Row One -->
+<div class="row" id="products">
+   
+    </div>	
+    <!-- /Product Row Four -->
+                    <!-- /Row -->
+               
 
 
 
@@ -273,5 +279,39 @@
     <script src="dist/js/widgets-data.js"></script>
 
 </body>
-
+<script>
+        var vv="";
+        var gg=5;
+        var aa="";
+        var ark;
+    for (var i = 0; i < gg; i++) {
+        if (i!=2) {
+             aa="00:09:00";
+             ark=100;
+        }else{
+            aa="01:10:00";
+            ark=200;
+        }
+        //เก็บค่าไว้ใน vv
+       vv= '<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">'+
+     '<div class="panel panel-default card-view pa-0">'+
+         '<div class="panel-wrapper collapse in">'+ 
+        '<div class="panel-body pa-0">'+
+                 '<article class="col-item">'+
+                     '<div class="photo">'+                                    
+                         '<a href="auction.html"> <img src="dist/img/chair.jpg" class="img-responsive" alt="Product Image" /> </a>'+
+                    '</div>'+
+                     '<div class="info">'+
+                        '<h6> ชื่อสินค้า </h6>'+                         
+                        '<span class="head-font block text-warning font-16">150 บาท </span>'+
+                     '</div>'+
+                 '</article>'+
+             '</div>'+
+         '</div>'+	
+    '</div>	'+
+ '</div>';
+        $('#products').append(vv); 
+    }
+    
+    </script>
 </html>

@@ -196,7 +196,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="table-wrap text-center">
-                                                <table id="Table1" class="table table-hover table-bordered mb-0">
+                                                <table id="tabel" class="table table-hover table-bordered mb-0">
                                                     <thead class="table table-hover mb-0">
                                                         <tr>
                                                             <th scope="col">ลำดับ</th>
@@ -210,24 +210,10 @@
                                                         </tr>
                 
                                                     </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                                    <td class="txt-dark">1</td>
-                                                                    <td class="txt-dark">ชื้อ อะไร น่ะ</td>
-                                                                    <td>
-                                                                            <img src="dist/img/chair.jpg" alt="iMac" width="80">
-                                                                            <p>5555555555555555555</p>
-                                                                        </td>
-                                                                    <td class="txt-dark">457898</td>
-                                                                   
-                                                                    <td>100</td>
-                                                                
-                                                                    <td>
-                                                                        <span class="label label-success font-weight-100">Paid</span>
-                                                                    </td>
-                                                                    <td><a href="javascript:void(0)" class="text-inverse pr-10" title="Edit" data-toggle="tooltip"><i class="zmdi zmdi-edit txt-warning"></i></a><a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="zmdi zmdi-delete txt-danger"></i></a></td>
-                                                                </tr>
-                                                    </tbody>
+                                                      <tbody>
+
+                                                      </tbody>
+                                                    
                                                    
                 
                                                 </table>
@@ -331,5 +317,40 @@
     <script src="dist/js/widgets-data.js"></script>
 
 </body>
-
+<script>
+        var vv="";
+        var gg=5;
+        var aa="";
+        var ark;
+    for (var i = 0; i < gg; i++) {
+        if (i!=2) {
+             aa="00:09:00";
+             ark=100;
+        }else{
+            aa="01:10:00";
+            ark=200;
+        }
+        //เก็บค่าไว้ใน vv
+       vv= 
+                '<tr>'+
+                    '<td class="txt-dark">1</td>'+
+                    '<td class="txt-dark">ชื้อ อะไร น่ะ</td>'+
+                    '<td>'+
+                    '<img src="dist/img/chair.jpg" alt="iMac" width="80">'+
+                    '<p>5555555555555555555</p>'+
+                    '</td>'+
+                    '<td class="txt-dark">457898</td>'+
+                                                                   
+                    '<td>100</td>'+
+                                                                
+                    '<td>'+
+                    '<span class="label label-success font-weight-100">Paid</span>'+
+                    '</td>'+
+                    '<td><a href="javascript:void(0)" class="text-inverse pr-10" title="Edit" data-toggle="tooltip"><i class="zmdi zmdi-edit txt-warning"></i></a><a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="zmdi zmdi-delete txt-danger"></i></a></td>'+
+                    '</tr>';        
+                                                   
+        $('#tabel tbody').append(vv); 
+    }
+    
+    </script>
 </html>
