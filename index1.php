@@ -1,10 +1,24 @@
+<?php
+  // Init session
+  session_start();
+
+  // Include db config
+  require_once 'db.php';
+
+  // Validate login
+  if(!isset($_SESSION['email']) || empty($_SESSION['email'])){
+    header('location: login.php');
+    exit;
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>ตะกร้า</title>
+    <title>หน้าแรก</title>
     <meta name="description" content="Elmer is a Dashboard & Admin Site Responsive Template by hencework." />
     <meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Elmer Admin, Elmeradmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
     <meta name="author" content="hencework" />
@@ -525,53 +539,15 @@
         <div class="page-wrapper">
             <div class="container-fluid pt-25">
 
-                <!-- Row -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="panel panel-default card-view">
-                            <div class="panel-heading">
-                                <div class="pull-left">
-                                    <h6 class="panel-title txt-dark">รายการสินค้า</h6>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="panel-wrapper collapse in">
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="table-wrap text-center">
-                                                <table id="tabel" class="table table-hover table-bordered mb-0">
-                                                    <thead class="table table-hover mb-0">
-                                                        <tr>
-                                                            <th scope="col">ลำดับ</th>
-                                                            <th scope="col">สินค้า</th>
-                                                            <th scope="col">รายกละเอียสินค้า</th>
-                                                            <th scope="col">จำนวน</th>
-                                                
-                                                            <th scope="col">ราคา</th>
-                                                            <th scope="col">ชำระเงิน</th>
-                                                            <th scope="col">แก้ไข</th>
-                                                        </tr>
-                
-                                                    </thead>
-                                                      <tbody>
-
-                                                      </tbody>
-                                                    
-                                                   
-                
-                                                </table>
-                                            </div>
-                                        </div>
-                
-                                    </div>
-                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Row -->
+               
+ <!-- Row -->
+<!-- Product Row One -->
+<div class="row" id="products">
+   
+    </div>	
+    <!-- /Product Row Four -->
+                    <!-- /Row -->
+               
 
 
 
@@ -676,25 +652,24 @@
             ark=200;
         }
         //เก็บค่าไว้ใน vv
-       vv= 
-                '<tr>'+
-                    '<td class="txt-dark">1</td>'+
-                    '<td class="txt-dark">ชื้อ อะไร น่ะ</td>'+
-                    '<td>'+
-                    '<img src="dist/img/chair.jpg" alt="iMac" width="80">'+
-                    '<p>5555555555555555555</p>'+
-                    '</td>'+
-                    '<td class="txt-dark">457898</td>'+
-                                                                   
-                    '<td>100</td>'+
-                                                                
-                    '<td>'+
-                    '<span class="label label-success font-weight-100">Paid</span>'+
-                    '</td>'+
-                    '<td><a href="javascript:void(0)" class="text-inverse pr-10" title="Edit" data-toggle="tooltip"><i class="zmdi zmdi-edit txt-warning"></i></a><a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="zmdi zmdi-delete txt-danger"></i></a></td>'+
-                    '</tr>';        
-                                                   
-        $('#tabel tbody').append(vv); 
+       vv= '<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">'+
+     '<div class="panel panel-default card-view pa-0">'+
+         '<div class="panel-wrapper collapse in">'+ 
+        '<div class="panel-body pa-0">'+
+                 '<article class="col-item">'+
+                     '<div class="photo">'+                                    
+                         '<a href="auction.html"> <img src="dist/img/chair.jpg" class="img-responsive" alt="Product Image" /> </a>'+
+                    '</div>'+
+                     '<div class="info">'+
+                        '<h6> ชื่อสินค้า </h6>'+                         
+                        '<span class="head-font block text-warning font-16">150 บาท </span>'+
+                     '</div>'+
+                 '</article>'+
+             '</div>'+
+         '</div>'+	
+    '</div>	'+
+ '</div>';
+        $('#products').append(vv); 
     }
     
     </script>

@@ -8,10 +8,10 @@
     <meta name="description" content="Elmer is a Dashboard & Admin Site Responsive Template by hencework." />
     <meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Elmer Admin, Elmeradmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
     <meta name="author" content="hencework" />
-    <meta name="google-signin-client_id" content="892782782457-44ou3oi2m56o379o4m652crhvbvdd4ua.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="425773223679-0afdbvv2qkr2afnb9momibek48c26im7.apps.googleusercontent.com">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
 
     <!-- Favicon -->
@@ -47,7 +47,7 @@
             <div class="mobile-only-brand pull-left">
                 <div class="nav-header pull-left">
                     <div class="logo-wrap">
-                        <a href="index1.html">
+                        <a href="index1.php">
 
                             <span class="brand-text">E-AUCTION</span>
                         </a>
@@ -61,25 +61,33 @@
                 <form id="search_form" role="search" class="top-nav-search collapse pull-left">
 
                 </form>
+
             </div>
+            <div class="mobile-only-nav pull-right">
+
+            </div>
+
             <div id="mobile_only_nav" class="mobile-only-nav pull-right">
                 <ul class="nav navbar-right top-nav pull-right">
                     <li>
-
+                       
                     </li>
-
-
-
                     <li class="dropdown auth-drp">
-                        <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="./dist/img/iconsuser.png" />
+                        <!-- <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="dist/img/user1.png"
+                                alt="user_auth" class="user-auth-img img-circle" /><span class="user-online-status"></span></a>
+                        <span class="user-online-status"></span>
+                        </a> -->
+                        <!-- <ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX"> -->
+                            <!-- <li>
+                                <a href="profile.html"><i class="zmdi zmdi-account"></i><span>ข้อมูลส่วนตัว</span></a>
+                            </li> -->
 
-                        </a>
-                        <ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
-
+                            <li class="divider"></li>
                             <li>
-                                <a href="login.html"><i class="zmdi zmdi-power"></i><span>เข้าสู้ระบบ</span></a>
+                                <a href="login.php"><i class="zmdi zmdi-power"></i><span>เข้าสู่ระบบ</span></a>
                             </li>
                         </ul>
+
                     </li>
                 </ul>
             </div>
@@ -183,7 +191,7 @@
         <div class="page-wrapper">
             <div class="container-fluid pt-25">
 
-              
+
 
                 <!-- Row -->
                 <div class="row">
@@ -196,118 +204,132 @@
                                     <div class="form-wrap">
                                         <form action="#">
 
-                                                <div class="row">
-                                                        <div class="col-lg-6">
-                                                                <div class="form-group">
-                                                            <label class="control-label mb-10" for="exampleInputName_1">ชื่อผู้ใช้</label>
-                                                            <input type="" class="form-control" required="" id="exampleInputName_1" placeholder="ชื่อผู้ใช้">
-                                                        </div>
-                                                        </div>
-    
-    
-                                                        <div class="col-lg-6">
-                                                                <div class="form-group">
-                                                            <label class="control-label mb-10" for="exampleInputName_1">รหัสผ่าน</label>
-                                                            <input type="" class="form-control" required="" id="exampleInputName_1" placeholder="รหัสผ่าน">
-                                                        </div>
-                                                        </div>
-    
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">ชื่อผู้ใช้</label>
+                                                        <input type="" class="form-control" required="" id="exampleInputName_1"
+                                                            placeholder="ชื่อผู้ใช้">
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                                <div class="form-group">
-                                                            <label class="control-label mb-10" for="exampleInputName_1">ชื่อ</label>
-                                                            <input type="" class="form-control" required="" id="exampleInputName_1" placeholder="ชื่อ">
-                                                            </div>
-                                                        </div>
-    
-                                                        <div class="col-lg-3">
-                                                                <div class="form-group">
-                                                            <label class="control-label mb-10" for="exampleInputName_1">นามสกุล</label>
-                                                            <input type="" class="form-control" required="" id="exampleInputName_1" placeholder="นามสกุล">
-                                                        </div>
-                                                        </div>
-                                                        <div class="col-lg-2">
-                                                                <div class="form-group">
-                                                            <label class="control-label mb-10" for="exampleInputName_1">เพศ</label>
-                                                            <div class="radio-list">
-                                                                <div class="radio-inline pl-0">
-                                                                    <div class="radio radio-info">
-                                                                        <input type="radio" name="radio" id="radio1" value="option1">
-                                                                        <label for="radio1">ชาย</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="radio-inline">																
-                                                                    <div class="radio radio-info">
-                                                                        <input type="radio" name="radio" id="radio2" value="option2">
-                                                                        <label for="radio2">หญิง</label>
-                                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">รหัสผ่าน</label>
+                                                        <input type="" class="form-control" required="" id="exampleInputName_1"
+                                                            placeholder="รหัสผ่าน">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">ชื่อ</label>
+                                                        <input type="" class="form-control" required="" id="exampleInputName_1"
+                                                            placeholder="ชื่อ">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">นามสกุล</label>
+                                                        <input type="" class="form-control" required="" id="exampleInputName_1"
+                                                            placeholder="นามสกุล">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">เพศ</label>
+                                                        <div class="radio-list">
+                                                            <div class="radio-inline pl-0">
+                                                                <div class="radio radio-info">
+                                                                    <input type="radio" name="radio" id="radio1" value="option1">
+                                                                    <label for="radio1">ชาย</label>
                                                                 </div>
                                                             </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-2">
-                                                                <div class="form-group">
-                                                            <label class="control-label mb-10" for="exampleInputName_1">วันเกิด</label>
-                                                            <input type="date" class="form-control" required="" id="exampleInputName_1" placeholder="วันเกิด">
+                                                            <div class="radio-inline">
+                                                                <div class="radio radio-info">
+                                                                    <input type="radio" name="radio" id="radio2" value="option2">
+                                                                    <label for="radio2">หญิง</label>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-    
-                                                    <div class="row">
-                                                        <div class="col-lg-3">		
-                                                                <div class="form-group"> 												
-                                                            <label class="control-label mb-10" for="exampleInputName_1">เบอร์โทรศัพท์</label>
-                                                            <input type="" class="form-control" required="" id="exampleInputName_1" placeholder="เบอร์โทรศัพท์">
-                                                        </div>
-                                                        </div>
-    
-                                                        <div class="col-lg-5">
-                                                                <div class="form-group"> 	
-                                                            <label class="control-label mb-10" for="exampleInputName_1">อีเมล</label>
-                                                            <input type="email" class="form-control" required="" id="" placeholder="อีเมล">	
-                                                        </div>													
-                                                        </div>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">วันเกิด</label>
+                                                        <input type="date" class="form-control" required="" id="exampleInputName_1"
+                                                            placeholder="วันเกิด">
                                                     </div>
-    
-                                                    <div class="row">
-                                                        <div class="col-lg-4">
-                                                                <div class="form-group"> 
-                                                            <label class="control-label mb-10" for="exampleInputName_1">รายละเอียดที่อยู่</label>
-                                                            <input type="" class="form-control" required="" id="exampleInputName_1" placeholder="ห้องเลขที่,บ้านเลขที่,ตึก,ชื่อถนน">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-2">
-                                                                <div class="form-group"> 
-                                                            <label class="control-label mb-10" for="exampleInputName_1">อำเภอ</label>
-                                                            <input type="" class="form-control" required="" id="exampleInputName_1" placeholder="อำเภอ">
-                                                            </div>
-                                                        </div>
-    
-                                                        <div class="col-lg-2">
-                                                                <div class="form-group"> 
-                                                            <label class="control-label mb-10" for="exampleInputName_1">จังหวัด</label>
-                                                            <input type="" class="form-control" required="" id="exampleInputName_1" placeholder="จังหวัด">
-                                                            </div>
-                                                        </div>
-    
-                                                        <div class="col-lg-2">
-                                                                <div class="form-group"> 
-                                                            <label class="control-label mb-10" for="exampleInputName_1">รหัสไปรษณี</label>
-                                                            <input type="" class="form-control" required="" id="exampleInputName_1" placeholder="รหัสไปรษณี">
-                                                        </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">เบอร์โทรศัพท์</label>
+                                                        <input type="" class="form-control" required="" id="exampleInputName_1"
+                                                            placeholder="เบอร์โทรศัพท์">
                                                     </div>
+                                                </div>
+
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">อีเมล</label>
+                                                        <input type="email" class="form-control" required="" id=""
+                                                            placeholder="อีเมล">                                                            
+                                                    </div>                                                    
+                                                </div>
+
+                                              
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">รายละเอียดที่อยู่</label>
+                                                        <input type="" class="form-control" required="" id="exampleInputName_1"
+                                                            placeholder="ห้องเลขที่,บ้านเลขที่,ตึก,ชื่อถนน">
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-6">
-                                                                <div class="form-group"> 
-                                                            <label class="control-label mb-10" for="exampleInputName_1">อื่นๆ</label>
-                                                            <input type="" class="form-control " required="" id="exampleInputName_1" placeholder="อื่นๆ">
-                                                            </div>
-                                                        </div>
-                                            
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">อำเภอ</label>
+                                                        <input type="" class="form-control" required="" id="exampleInputName_1"
+                                                            placeholder="อำเภอ">
                                                     </div>
-                                                    
+                                                </div>
+
+                                                <div class="col-lg-2">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">จังหวัด</label>
+                                                        <input type="" class="form-control" required="" id="exampleInputName_1"
+                                                            placeholder="จังหวัด">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-2">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">รหัสไปรษณี</label>
+                                                        <input type="" class="form-control" required="" id="exampleInputName_1"
+                                                            placeholder="รหัสไปรษณี">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label mb-10" for="exampleInputName_1">อื่นๆ</label>
+                                                        <input type="" class="form-control " required="" id="exampleInputName_1"
+                                                            placeholder="อื่นๆ">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
                                             <div class="form-group">
                                                 <div class="checkbox checkbox-primary pr-10 pull-left">
                                                     <input id="checkbox_2" required="" type="checkbox">
@@ -315,22 +337,17 @@
                                                 </div>
                                                 <div class="clearfix"></div>
                                             </div>
-                                          
+
                                             <div class="form-group text-center">
                                                 <button type="submit" class="btn btn-primary btn-rounded">sign Up</button>
                                             </div>
 
                                         </form>
+                                        
                                         <div class="button-list mt-25">
-                                                <button class="btn btn-facebook btn-icon-anim btn-circle"><i class="fa fa-facebook"></i></button>
-                                                
-                                                <button class="btn btn-twitter btn-icon-anim btn-circle"><i class="fa fa-twitter"></i></button>
-                                                
-                                                <button class="btn btn-googleplus btn-icon-anim btn-circle"><i class="fa fa-google-plus"></i></button>
-                                                
-                                                <button class="btn btn-instagram btn-icon-anim btn-circle"><i class="fa fa-instagram"></i></button>
-
-                                                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                                                                                      
+                                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                                        
                                         </div>
                                     </div>
                                 </div>
@@ -339,7 +356,7 @@
                     </div>
                 </div>
                 <!-- /Row -->
-            
+
 
 
 
@@ -428,15 +445,15 @@
     <script src="dist/js/init.js"></script>
     <script src="dist/js/widgets-data.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-<script>
-    function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-}
-</script>
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        }
+    </script>
 </body>
 
 </html>
